@@ -1,0 +1,6 @@
+Locales['en'] = {
+  ['without_mask_dmg'] = "You get damage without a mask",
+  ['cant_carry_that_much'] = "You cant carry that much",
+  ['not_the_right_items'] = "You dont got the right items for this Step",
+  ['press_to_start'] = "Press ~INPUT_CONTEXT~ to start the process"
+}

@@ -31,7 +31,7 @@ FRAMEWORKS = {
             if xPlayer.canCarryItem(item.name, item.amount) then
                 xPlayer.addInventoryItem(item.name, item.amount)
             else
-                TriggerClientEvent('gflp10-meth:client:notify', source, _U('cant_carry_that_much'))
+                TriggerClientEvent('gflp10-meth:client:notify', source, locale('cant_carry_that_much'))
             end
         end
     },

@@ -1,3 +1,5 @@
+lib.locale()
+
 RegisterNetEvent('gflp10-meth:client:notify')
 AddEventHandler('gflp10-meth:client:notify', function(text)
     TriggerEvent('esx:showNotification', text)

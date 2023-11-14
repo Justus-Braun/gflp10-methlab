@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
 
             for k, v in pairs(Config.Actions) do
                 if #(playerCoords - v.Postion) <= v.Distance then
-                    ShowHelpNotify(_U("press_to_start"))
+                    ShowHelpNotify(locale("press_to_start"))
                     if IsControlJustPressed(0, 46) then
                         CheckItems(v)
                     end 
@@ -116,7 +116,7 @@ function PlayerScene(scene)
 
         if not isAllowed then
             Citizen.CreateThread(function()
-                TriggerEvent('gflp10-meth:client:notify', _U('without_mask_dmg'))
+                TriggerEvent('gflp10-meth:client:notify', locale('without_mask_dmg'))
                 while not over do
                     ApplyDamageToPed(ped, scene.DamageAmount, scene.ArmorFirst)
                     Wait(1000)

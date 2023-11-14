@@ -11,7 +11,7 @@ AddEventHandler("gflp10-meth:server:reward", function(scene)
         if Framework.HasPlayerItem(_source, scene.ItemReward) then
             Framework.AddPlayerItem(_source, scene.ItemReward)
         else
-            TriggerClientEvent('gflp10-meth:client:notify', _source, _U('cant_carry_that_much'))
+            TriggerClientEvent('gflp10-meth:client:notify', _source, locale('cant_carry_that_much'))
         end
     else
         Framework.AddPlayerItem(_source, scene.ItemReward)
@@ -25,6 +25,6 @@ AddEventHandler("gflp10-meth:server:hasPlayerItems", function(scene)
     if Framework.HasPlayerItem(_source, scene.ItemNeeds) then
         TriggerClientEvent('gflp10-meth:client:playerHasItems', _source, scene)
     else
-        TriggerClientEvent('gflp10-meth:client:notify', _source, _U('not_the_right_items'))
+        TriggerClientEvent('gflp10-meth:client:notify', _source, locale('not_the_right_items'))
     end
 end)
